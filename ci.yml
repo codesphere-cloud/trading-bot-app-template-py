@@ -1,0 +1,10 @@
+prepare:
+  steps:
+    - name: Install dependencies
+      command: pipenv install
+test:
+  steps: []
+run:
+  steps:
+    - name: Run trading bot
+      command: pipenv run python trader.py
